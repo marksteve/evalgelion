@@ -1,5 +1,6 @@
-#!/usr/bin/env python
-
 from pyaib.ircbot import IrcBot
-bot = IrcBot('evalgelion.conf')
-bot.run()
+
+if __name__ == '__main__':
+  bot = IrcBot('evalgelion.conf')
+  bot.run()
+

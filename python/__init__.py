@@ -5,14 +5,14 @@ from pyaib.plugins import keyword
 from util import error
 
 
-def seval(cmd):
-  return subprocess.check_output(['python', 'seval.py', cmd])
+def sec_eval(cmd):
+  return subprocess.check_output(['python', 'python/sec_eval.py', cmd])
 
 
 @keyword('python')
 def python(irc_c, msg, trigger, args, kwargs):
   try:
-    msg.reply(msg.nick + ': ' + seval(' '.join(args)))
+    msg.reply(msg.nick + ': ' + sec_eval(' '.join(args)))
   except:
     msg.reply(msg.nick + ': ' + error())
 
