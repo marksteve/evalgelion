@@ -5,4 +5,5 @@ RUN apt-get -y install python-dev python-setuptools
 RUN easy_install pip
 RUN pip install --no-use-wheel python-prctl cffi pyaib
 ADD . /evalgelion
-ENTRYPOINT ["python", "/evalgelion/evalgelion.py"]
+WORKDIR /evalgelion
+CMD ["python", "evalgelion.py"]
