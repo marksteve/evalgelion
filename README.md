@@ -2,7 +2,7 @@
 
 An IRC eval bot
 
-## Support languages
+## Supported languages
 
 ### Python
 ```
