@@ -1,0 +1,3 @@
+[submodule "ii"]
+	path = ii
+	url = http://git.suckless.org/ii
